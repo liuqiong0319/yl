@@ -1,0 +1,8 @@
+E:\dyfBTC\WebHyDyf\WebHyDyf\bin\WebHyDyf.dll
+E:\dyfBTC\WebHyDyf\WebHyDyf\bin\WebHyDyf.pdb
+E:\dyfBTC\WebHyDyf\WebHyDyf\obj\Release\WebHyDyf.dll
+E:\dyfBTC\WebHyDyf\WebHyDyf\obj\Release\WebHyDyf.pdb
+E:\dyfBTC\WebHyDyf\WebHyDyf\obj\Release\WebHyDyf.csprojResolveAssemblyReference.cache
+E:\dyfBTC\WebHyDyf\WebHyDyf\bin\Newtonsoft.Json.dll
+E:\dyfBTC\WebHyDyf\WebHyDyf\bin\Newtonsoft.Json.xml
+E:\dyfBTC\WebHyDyf\WebHyDyf\bin\Newtonsoft.Json.pdb

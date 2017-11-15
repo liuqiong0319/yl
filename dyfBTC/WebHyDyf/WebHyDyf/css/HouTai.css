@@ -1,0 +1,268 @@
+﻿.HouTai_DIV {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.HouTai_DIV_L {
+    width: 200px;
+    float: left;
+    margin-top: 10px;
+}
+
+.HouTai_DIV_R {
+    float: right;
+}
+
+
+.HouTai_TOP {
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    text-indent: 1.2em;
+    font-weight: bold;
+    background-color: #ff4e00;
+    width: 990px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.HouTai_IN {
+    box-shadow: 0 0 5px #e0e0e0;
+    margin-top: 10px;
+}
+
+.HouTai_IN_01 {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px dotted #c4c4c4;
+}
+
+.HouTai_IN_01_top {
+    line-height: 40px;
+    font-size: 16px;
+    text-indent: 0.2em;
+    font-weight: bolder;
+}
+
+.HouTai_IN_01_01 {
+    line-height: 60px;
+    font-size: 13px;
+    /*margin-left: 20px;*/
+}
+
+.HouTai_IN_01 span {
+    /*color: #ff0000;
+    font-weight: bolder;*/
+}
+
+.HouTai_IN_01_01a {
+    float: left;
+    width: 90px;
+    text-align: right;
+}
+
+.HouTai_IN_01_01b {
+    float: left;
+}
+
+.Shu_botton {
+    width: 400px;
+    border: 1px solid #808080;
+    font-size: 12px;
+    margin-left: 20px;
+    line-height: 20px;
+    margin-top: -3px;
+}
+
+.Xuan_button {
+    height: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+    .Xuan_button input {
+        vertical-align: text-top;
+    }
+
+.YaoPin_img {
+    float: right;
+    width: 780px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.YaoPin_img_in {
+    width: 120px;
+    margin-left: 16px;
+    margin-right: 16px;
+    float: left;
+}
+
+    .YaoPin_img_in img {
+        width: 120px;
+        height: 120px;
+        max-width: 120px;
+        max-height: 120px;
+        border: 1px solid #808080;
+    }
+
+.TP_SC {
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 24px;
+}
+
+.TP_SC01 {
+    background-color: #ffffff;
+    color: #ff4e00;
+    font-weight: 400;
+    width: 120px;
+    margin-top: 10px;
+    border: 1px solid #ff4e00;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 24px;
+}
+
+.ypJS {
+    width: 760PX;
+    max-width: 760PX;
+    min-width: 760px;
+    line-height: 20px;
+    font-size: 13px;
+    height: 289px;
+}
+
+.ShenHe {
+    width: 990px;
+}
+
+.ShenHe-Table {
+    width: 990px;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    border: 1px solid #c4c4c4;
+}
+
+    .ShenHe-Table th {
+        border: 1px solid #c4c4c4;
+        background-color: #ededed;
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    .ShenHe-Table td {
+        text-indent: 0.5em;
+        line-height: 16px;
+        font-size: 13px;
+        border: 1px solid #c4c4c4;
+        padding: 3px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        /*text-overflow: ellipsis;
+        word-break: keep-all;
+        overflow: hidden;*/
+    }
+
+    .ShenHe-Table tr {
+        background-color: #fff0eb;
+        border-top: 1px solid #c4c4c4;
+        border: 1px solid #c4c4c4;
+    }
+
+        .ShenHe-Table tr:nth-child(even) {
+            background: #ffffff;
+            border: 1px solid #c4c4c4;
+        }
+
+        .ShenHe-Table tr:hover {
+            background-color: #ffd8c0;
+            border: 1px solid #c4c4c4;
+        }
+
+
+    .ShenHe-Table td span {
+        color: #808080;
+        margin-left: 5px;
+    }
+
+.ShenHe-Table_td02 {
+    text-align: right;
+    color: #f00;
+    padding-right: 8px;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    overflow: hidden;
+    border: 1px solid #c4c4c4;
+}
+/*审核表*/
+.HouTai_IN_S {
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.HouTai_IN_SS {
+    font-size: 13px;
+}
+/*搜索审核条件*/
+.SouS_SH {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-bottom: 1px dotted #aaa;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.SouS_SH_A {
+    float: left;
+    margin-left: 20px;
+    padding: 0px;
+    height: 22px;
+}
+
+.SouS_SH_B {
+    float: left;
+    margin-right: 20px;
+}
+
+.SouS_SH_A_01 {
+    width: 110px;
+    text-indent: 0.5em;
+    font-size: 12px;
+    height: 18px;
+    max-height: 18px;
+    color: #555;
+    border: 1px solid #aaa;
+    border-width: 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 24px!important; /*重要*/
+}
+
+.SouS_SH_A_02 {
+    width: 100px;
+    font-size: 12px;
+    color: #555;
+    border: 1px solid #aaa;
+    border-width: 1px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    line-height: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    max-height: 20px;
+}

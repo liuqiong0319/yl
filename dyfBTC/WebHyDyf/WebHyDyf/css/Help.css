@@ -1,0 +1,49 @@
+﻿.IN_F {
+    float: left;
+    width: 211px;
+}
+
+.Help_Top {
+    background-color: #ff6a00;
+    font-size: 16px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-indent: 2em;
+}
+
+.Chang {
+    line-height: 30px;
+    color: #555;
+    text-indent: 3em;
+    cursor: pointer;
+}
+
+    .Chang dt {
+        font-size: 15px;
+        font-weight: bolder;
+        background-color: #f8f8f8;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-width: 1px;
+        line-height: 40px;
+    }
+
+    .Chang dd {
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 30px;
+        text-indent: 4em;
+    }
+
+.IN_R {
+    float: right;
+    width: 980px;
+}
+
+.CL {
+    clear: both;
+}

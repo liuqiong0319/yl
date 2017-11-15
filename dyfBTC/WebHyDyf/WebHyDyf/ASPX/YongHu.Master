@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="YongHu.master.cs" Inherits="WebHyDyf.ASPX.YongHu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+    <script src="/js/jquery-1.8.2.min.js"></script>
+    <script src="/js/layer/layer.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="soubg">
+            <div class="sou">
+                <!--Begin 所在收货地区 Begin-->
+                <div class="soubg">
+                    <div class="sou">
+                        <!--Begin 所在收货地区 Begin-->
+                        <!--End 所在收货地区 End-->
+                        <!--选择显示-->
+
+                        <div style="display: normal;">
+                            <span id="sp_dlq" runat="server">
+                                <span class="fl">你好，请<a href="/ASPX/Login.aspx">登录</a>&nbsp; <a href="/ASPX/Regist.aspx" style="color: #ff4e00;">免费注册</a>&nbsp;</span>
+                            </span>
+                            <span id="sp_dlh" runat="server" visible="false">
+                                <span class="fl" id="sp_hy" runat="server"></span>&nbsp;|&nbsp;<asp:LinkButton ID="LinkButton1" OnClick="LinkButton1_Click" runat="server">会员中心</asp:LinkButton>&nbsp;|
+                                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">注销</asp:LinkButton>&nbsp;
+                            </span>
+
+                        </div>
+                        <div>
+                        </div>
+                        <!--选择显示-->
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+                <!--End 所在收货地区 End-->
+            </div>
+        </div>
+        <div class="m_top_bg">
+            <div class="top">
+                <div class="m_logo" style="width: 207px;">
+                    <a href="Index.html">
+                        <img src="/images/logo.png" /></a>
+                </div>
+                <div class="m_search">
+                    <asp:TextBox runat="server" ID="txtSearch" class="m_ipt"></asp:TextBox>
+                    <asp:Button ID="btnSelect" runat="server" OnClick="btnSelect_Click" Text="搜索" class="m_btn" />
+                </div>
+                <div class="i_car">
+                    <a href="/ASPX/Shop/ShoppingCart.aspx">
+                        <div class="car_t">&nbsp;&nbsp;购物车</div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div style="width: 1200px; margin-left: auto; margin-right: auto">
+            <div style="float: left">
+                <div class="m_left">
+                    <div class="left_n">管理中心</div>
+                    <div class="left_m">
+                        <div class="left_m_t t_bg1">订单中心</div>
+                        <ul>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">收货地址</a></li>
+                            <li><a href="#">缺货登记</a></li>
+                            <li><a href="#">跟踪订单</a></li>
+                        </ul>
+                    </div>
+                    <div class="left_m">
+                        <div class="left_m_t t_bg2">会员中心</div>
+                        <ul>
+                            <li><a href="#">用户信息</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">我的留言</a></li>
+                            <li><a href="#">推广链接</a></li>
+                            <li><a href="#">我的评论</a></li>
+                        </ul>
+                    </div>
+                    <div class="left_m">
+                        <div class="left_m_t t_bg3">账户中心</div>
+                        <ul>
+                            <li><a href="#">账户安全</a></li>
+                            <li><a href="#">积分来源</a></li>
+                            <li><a href="#">积分兑换</a></li>
+                        </ul>
+                    </div>
+                    <!--对一般会员隐藏-->
+                    <div class="left_m" style="display: normal;">
+                        <div class="left_m_t t_bg4">供货商专区</div>
+                        <ul>
+                            <li><a href="#">我的药品</a></li>
+                            <li><a href="#">上传药品</a></li>
+                            <li><a href="#">上传信息</a></li>
+                            <li><a href="#">更多</a></li>
+                        </ul>
+                    </div>
+                    <!--对一般会员隐藏-->
+                </div>
+            </div>
+
+            <div style="float: right">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+
+        <div class="b_btm_bg b_btm_c">
+            <%--<div class="b_btm">
+                <table border="0" style="width: 210px; height: 62px; float: left; margin-left: 75px; margin-top: 30px;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="72">
+                            <img src="/images/b1.png" width="62" height="62" /></td>
+                        <td>
+                            <h2>正品保障</h2>
+                            正品行货  放心购买</td>
+                    </tr>
+                </table>
+                <table border="0" style="width: 210px; height: 62px; float: left; margin-left: 75px; margin-top: 30px;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="72">
+                            <img src="/images/b2.png" width="62" height="62" /></td>
+                        <td>
+                            <h2>满38包邮</h2>
+                            满38包邮 免运费</td>
+                    </tr>
+                </table>
+                <table border="0" style="width: 210px; height: 62px; float: left; margin-left: 75px; margin-top: 30px;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="72">
+                            <img src="/images/b3.png" width="62" height="62" /></td>
+                        <td>
+                            <h2>天天低价</h2>
+                            天天低价 畅选无忧</td>
+                    </tr>
+                </table>
+                <table border="0" style="width: 210px; height: 62px; float: left; margin-left: 75px; margin-top: 30px;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="72">
+                            <img src="/images/b4.png" width="62" height="62" /></td>
+                        <td>
+                            <h2>准时送达</h2>
+                            收货时间由你做主</td>
+                    </tr>
+                </table>
+            </div>--%>
+        </div>
+        
+        <div class="btm">
+            版权所有：安徽华源大药房连锁有限公司    系统维护：安徽华源医药电子商务有限公司
+            <br />
+            地址：太和县沙河东路168号    邮编：236600     电话：0558-8615688
+            <br />
+            <a href="../Certificate/JYXK.png" target="_blank">药品经营许可证：皖CA5580123 </a><a href="../Certificate/LTXK.png" target="_blank" style="padding-left: 20px;">食品流通许可证：SP3412221410001130</a><br />
+            <a href="../Certificate/XXFW.png" target="_blank">互联网药品信息服务资格证书：(皖)-非经营性-2016-0006 </a><a href="../Certificate/YYZZ.png" target="_blank" style="padding-left: 20px;">营业执照：91341222087574401G</a><br />
+            <a href="../Certificate/BAPZ.png" target="_blank">第二类医疗器械经营备案凭证：皖阜食药监械经营备20160723号</a>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,230 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ASPX/HouTai/HouT.Master" AutoEventWireup="true" CodeBehind="Review.aspx.cs" Inherits="WebHyDyf.ASPX.HouTai.Review" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="HouTai_DIV_R">
+        <div class="HouTai_TOP">审核药品</div>
+        <!--右侧内容的HTML引进这个DIV里面开始-->
+        <div class="HouTai_IN">
+            <div class="ShenHe">
+                <div class="SouS_SH">
+                    <div class="SouS_SH_A">
+                        <asp:TextBox ID="TextBox1" runat="server" Class="SouS_SH_A_01 "></asp:TextBox>
+                    </div>
+                    <div class="SouS_SH_B">
+                        <asp:Button ID="Button1" runat="server" Text="Button" Class="SouS_SH_A_02 " />
+                    </div>
+                    
+                    <div style="clear: both"></div>
+                </div>
+                <div>
+                    <table class="ShenHe-Table">
+                        <tr>
+                            <th style="width: 40px;">名称</th>
+                            <th style="width: 120px;">批准文号
+                            </th>
+                            <th>名称/产地</th>
+                            <th style="width: 80px;">规格</th>
+                            <th style="width: 60px;">图片</th>
+                            <th style="width: 40px;">剂型</th>
+                            <th style="width: 50px;">包装</th>
+                            <th style="width: 50px;">中包装</th>
+                            <th style="width: 60px;">最高零售</th>
+                            <th style="width: 60px;">首营资料</th>
+                            <th style="width: 120px;">操作</th>
+                        </tr>
+                        <tr>
+                            <td>零货</td>
+                            <td>10086123456452</td>
+                            <td><b>测试用药品名称长度什么的随意了时代发生地方</b><br />
+                                <span>测试用药品产地长度什么的随意了水电费速度说是道非</span>
+                            </td>
+                            <td>10*15*20粒</td>
+                            <td><a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </td>
+                            <td class="ShenHe-Table_td02"><b>0.586</b></td>
+                            <td class="ShenHe-Table_td02">10086</td>
+                            <td>粉针剂</td>
+                            <td class="ShenHe-Table_td02">950元</td>
+                            <td><a href="#">查看详情</a></td>
+                            <td><a href="#">通过</a>&nbsp;&nbsp;
+                                <a href="#">不通过</a>&nbsp;&nbsp;
+                                <a href="#">标记</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>零货</td>
+                            <td>10086123456452</td>
+                            <td><b>测试用药品名称长度什么的随意了时代发生地方</b><br />
+                                <span>测试用药品产地长度什么的随意了水电费速度说是道非</span>
+                            </td>
+                            <td>10*15*20粒</td>
+                            <td><a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </td>
+                            <td class="ShenHe-Table_td02"><b>0.586</b></td>
+                            <td class="ShenHe-Table_td02">10086</td>
+                            <td>粉针剂</td>
+                            <td class="ShenHe-Table_td02">950元</td>
+                            <td><a href="#">查看详情</a></td>
+                            <td><a href="#">通过</a>&nbsp;&nbsp;
+                                <a href="#">不通过</a>&nbsp;&nbsp;
+                                <a href="#">标记</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>零货</td>
+                            <td>10086123456452</td>
+                            <td><b>测试用药品名称长度什么的随意了时代发生地方</b><br />
+                                <span>测试用药品产地长度什么的随意了水电费速度说是道非</span>
+                            </td>
+                            <td>10*15*20粒</td>
+                            <td><a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </td>
+                            <td class="ShenHe-Table_td02"><b>0.586</b></td>
+                            <td class="ShenHe-Table_td02">10086</td>
+                            <td>粉针剂</td>
+                            <td class="ShenHe-Table_td02">950元</td>
+                            <td><a href="#">查看详情</a></td>
+                            <td><a href="#">通过</a>&nbsp;&nbsp;
+                                <a href="#">不通过</a>&nbsp;&nbsp;
+                                <a href="#">标记</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>零货</td>
+                            <td>10086123456452</td>
+                            <td><b>测试用药品名称长度什么的随意了时代发生地方</b><br />
+                                <span>测试用药品产地长度什么的随意了水电费速度说是道非</span>
+                            </td>
+                            <td>10*15*20粒</td>
+                            <td><a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </td>
+                            <td class="ShenHe-Table_td02"><b>0.586</b></td>
+                            <td class="ShenHe-Table_td02">10086</td>
+                            <td>粉针剂</td>
+                            <td class="ShenHe-Table_td02">950元</td>
+                            <td><a href="#">查看详情</a></td>
+                            <td><a href="#">通过</a>&nbsp;&nbsp;
+                                <a href="#">不通过</a>&nbsp;&nbsp;
+                                <a href="#">标记</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>零货</td>
+                            <td>10086123456452</td>
+                            <td><b>测试用药品名称长度什么的随意了时代发生地方</b><br />
+                                <span>测试用药品产地长度什么的随意了水电费速度说是道非</span>
+                            </td>
+                            <td>10*15*20粒</td>
+                            <td><a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </td>
+                            <td class="ShenHe-Table_td02"><b>0.586</b></td>
+                            <td class="ShenHe-Table_td02">10086</td>
+                            <td>粉针剂</td>
+                            <td class="ShenHe-Table_td02">950元</td>
+                            <td><a href="#">查看详情</a></td>
+                            <td><a href="#">通过</a>&nbsp;&nbsp;
+                                <a href="#">不通过</a>&nbsp;&nbsp;
+                                <a href="#">标记</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>零货</td>
+                            <td>10086123456452</td>
+                            <td><b>测试用药品名称长度什么的随意了时代发生地方</b><br />
+                                <span>测试用药品产地长度什么的随意了水电费速度说是道非</span>
+                            </td>
+                            <td>10*15*20粒</td>
+                            <td><a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </td>
+                            <td class="ShenHe-Table_td02"><b>0.586</b></td>
+                            <td class="ShenHe-Table_td02">10086</td>
+                            <td>粉针剂</td>
+                            <td class="ShenHe-Table_td02">950元</td>
+                            <td><a href="#">查看详情</a></td>
+                            <td><a href="#">通过</a>&nbsp;&nbsp;
+                                <a href="#">不通过</a>&nbsp;&nbsp;
+                                <a href="#">标记</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>零货</td>
+                            <td>10086123456452</td>
+                            <td><b>测试用药品名称长度什么的随意了时代发生地方</b><br />
+                                <span>测试用药品产地长度什么的随意了水电费速度说是道非</span>
+                            </td>
+                            <td>10*15*20粒</td>
+                            <td><a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </td>
+                            <td class="ShenHe-Table_td02"><b>0.586</b></td>
+                            <td class="ShenHe-Table_td02">10086</td>
+                            <td>粉针剂</td>
+                            <td class="ShenHe-Table_td02">950元</td>
+                            <td><a href="#">查看详情</a></td>
+                            <td><a href="#">通过</a>&nbsp;&nbsp;
+                                <a href="#">不通过</a>&nbsp;&nbsp;
+                                <a href="#">标记</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>零货</td>
+                            <td>10086123456452</td>
+                            <td><b>测试用药品名称长度什么的随意了时代发生地方</b><br />
+                                <span>测试用药品产地长度什么的随意了水电费速度说是道非</span>
+                            </td>
+                            <td>10*15*20粒</td>
+                            <td><a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </td>
+                            <td class="ShenHe-Table_td02"><b>0.586</b></td>
+                            <td class="ShenHe-Table_td02">10086</td>
+                            <td>粉针剂</td>
+                            <td class="ShenHe-Table_td02">950元</td>
+                            <td><a href="#">查看详情</a></td>
+                            <td><a href="#">通过</a>&nbsp;&nbsp;
+                                <a href="#">不通过</a>&nbsp;&nbsp;
+                                <a href="#">标记</a>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+
+</asp:Content>

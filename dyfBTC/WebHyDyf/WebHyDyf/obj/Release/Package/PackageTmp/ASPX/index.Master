@@ -1,0 +1,432 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="WebHyDyf.ASPX.index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+
+    <script type="text/javascript" src="/js/jquery-1.11.1.min_044d0927.js"></script>
+    <script type="text/javascript" src="/js/jquery.bxslider_e88acd1b.js"></script>
+    <script src="/js/jquery-1.8.2.min.js"></script>
+    <script src="/js/layer/layer.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+
+    <script type="text/javascript" src="/js/lrscroll_1.js"></script>
+
+
+    <script type="text/javascript" src="/js/n_nav.js"></script>
+    <script type="text/javascript" src="/js/milk_ban.js"></script>
+    <script type="text/javascript" src="/js/paper_ban.js"></script>
+    <script type="text/javascript" src="/js/baby_ban.js"></script>
+    <title>安徽华源连锁大药房</title>
+    <link href="/images/HYEY.ico" rel="shortcut icon" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <!--Begin Header Begin-->
+                <div class="soubg">
+                    <div class="sou">
+                        <!--Begin 所在收货地区 Begin-->
+                        <!--End 所在收货地区 End-->
+                        <!--选择显示-->
+                        <div style="display: normal; float: left;">
+                            <span id="sp_dlq" runat="server">
+                                <span class="fl">你好，请<a href="/ASPX/Login.aspx">登录</a>&nbsp; <a href="/ASPX/Regist.aspx" style="color: #ff4e00;">免费注册</a>&nbsp;<a href="/ASPX/HouTai/ZhaoH_2.0.aspx" style="color: #ff4e00;">找回密码</a></span>
+                            </span>
+                            <span id="sp_dlh" runat="server" visible="false">
+                                <span class="fl" id="sp_hy" runat="server"></span>&nbsp;|&nbsp;
+                                <asp:LinkButton ID="LinkButton1" OnClick="LinkButton1_Click" runat="server">会员中心</asp:LinkButton>&nbsp;|
+                                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">注销</asp:LinkButton>&nbsp;
+                            </span>
+                        </div>
+                        <div style="float: left;">
+                        </div>
+                        <!--选择显示-->
+                        <div style="float: right;">
+                            <a href="http://www.hyeyls.cn/" target="_blank">安徽华源大药房连锁有限公司企业网&nbsp;</a>
+                            <a href="/ASPX/Login_YJG.aspx">政府监管</a>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+                <div class="top">
+                    <div class="logo">
+                        <a href="/ASPX/index.aspx">
+                            <img src="/images/logo.png" /></a>
+                    </div>
+                    <div class="search">
+                        <asp:TextBox ID="txtSearch" runat="server" class="s_ipt"></asp:TextBox>
+                        <asp:Button ID="btnSelect" Text="搜索" runat="server" OnClick="btnSelect_Click" class="s_btn" />
+                    </div>
+                    <div class="i_car">
+                        <a href="/ASPX/Shop/ShoppingCart.aspx">
+                            <div class="car_t">&nbsp;&nbsp;购物车</div>
+                        </a>
+
+                    </div>
+                </div>
+                <!--End Header End-->
+                <!--Begin Menu Begin-->
+                <div class="menu_bg">
+                    <div class="menu">
+                        <!--Begin 商品分类详情 Begin-->
+                        <div class="nav">
+                            <div class="nav_t">全部商品分类</div>
+                            <div class="leftNav none" id="XianS">
+                                <ul>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav1.png" /></span>
+                                            <span class="fl">妇科</span>
+                                        </div>
+                                        <div class="zj">
+                                            <div class="zj_l">
+                                                <div class="zj_l_c">
+                                                    <h2>妇科</h2>
+                                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=9">克霉唑阴道片</a>|
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav2.png" /></span>
+                                            <span class="fl">消化系统</span>
+                                        </div>
+                                        <div class="zj" style="top: -40px;">
+                                            <div class="zj_l">
+
+                                                <div class="zj_l_c">
+                                                    <h2>消化系统</h2>
+                                                    <a href="#">复方铝酸铋</a>|<a href="/ASPX/Drug/DrugDetails.aspx?id=16">整肠生</a>|
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav3.png" /></span>
+                                            <span class="fl">矿物质维生素</span>
+                                        </div>
+                                        <div class="zj" style="top: -80px;">
+                                            <div class="zj_l">
+                                                <div class="zj_l_c">
+                                                    <h2>矿物质维生素</h2>
+                                                    <a href="#">复合维生素平</a>|
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav4.png" /></span>
+                                            <span class="fl">抗炎抗病毒</span>
+                                        </div>
+                                        <div class="zj" style="top: -120px;">
+                                            <div class="zj_l">
+                                                <div class="zj_l_c">
+                                                    <h2>抗炎抗病毒</h2>
+                                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=13">华素片</a>|
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav5.png" /></span>
+                                            <span class="fl">解热镇痛</span>
+                                        </div>
+                                        <div class="zj" style="top: -160px;">
+                                            <div class="zj_l">
+                                                <div class="zj_l_c">
+                                                    <h2>解热镇痛</h2>
+                                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=10">臣功再欣</a>|<a href="/ASPX/Drug/DrugDetails.aspx?id=12">快克</a>|
+
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav6.png" /></span>
+                                            <span class="fl">安神药</span>
+                                        </div>
+                                        <div class="zj" style="top: -200px;">
+                                            <div class="zj_l">
+                                                <div class="zj_l_c">
+                                                    <h2>安神药</h2>
+                                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=17">安神补脑片</a>|
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav7.png" /></span>
+                                            <span class="fl">儿科</span>
+                                        </div>
+                                        <div class="zj" style="top: -240px;">
+                                            <div class="zj_l">
+                                                <div class="zj_l_c">
+                                                    <h2>儿科</h2>
+                                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=18">迪巧</a>|<a href="/ASPX/Drug/DrugDetails.aspx?id=19">小儿氨酚黄那敏颗粒</a>
+                                                    |<a href="/ASPX/Drug/DrugDetails.aspx?id=20">小儿感冒颗粒</a>|<a href="#">小儿善存平</a>|<a href="/ASPX/Drug/DrugDetails.aspx?id=22">小孩健胃消食片</a>|
+                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=23">伊可新</a>|<a href="/ASPX/Drug/DrugDetails.aspx?id=24">优卡丹</a>|
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav8.png" /></span>
+                                            <span class="fl">感冒用药</span>
+                                        </div>
+                                        <div class="zj" style="top: -280px;">
+                                            <div class="zj_l">
+                                                <div class="zj_l_c">
+                                                    <h2>感冒用药</h2>
+                                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=25">感冒清热颗粒</a>|
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav9.png" /></span>
+                                            <span class="fl">清热解毒</span>
+                                        </div>
+                                        <div class="zj" style="top: -320px;">
+                                            <div class="zj_l">
+                                                <div class="zj_l_c">
+                                                    <h2>清热解毒</h2>
+                                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=26">蒲地蓝消炎片</a>|<a href="/ASPX/Drug/DrugDetails.aspx?id=27">消炎片</a>|
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fj">
+                                            <span class="n_img"><span></span>
+                                                <img src="images/nav10.png" /></span>
+                                            <span class="fl">胃肠用药</span>
+                                        </div>
+                                        <div class="zj" style="top: -360px;">
+                                            <div class="zj_l">
+                                                <div class="zj_l_c">
+                                                    <h2>胃肠用药</h2>
+                                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=28">大人健胃消食片</a>|
+                                                    <a href="/ASPX/Drug/DrugDetails.aspx?id=29">气滞胃痛颗粒</a>|<a href="/ASPX/Drug/DrugDetails.aspx?id=30">温胃舒颗粒</a>|
+                                                </div>
+                                            </div>
+                                            <div class="zj_r">
+                                                <a href="#">
+                                                    <img src="/images/index/0001.jpg" width="236" height="200" /></a>
+                                                <a href="#">
+                                                    <img src="/images/index/0003.jpg" width="236" height="200" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--End 商品分类详情 End-->
+                        <ul class="menu_r">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">限时特卖</a></li>
+                            <li><a href="#">外用药</a></li>
+                            <li><a href="#">西药</a></li>
+                            <li><a href="#">中成药</a></li>
+
+                        </ul>
+                        <div class="m_ad"><a href="#" style="color: #ff4e00; font-size: 18px;">电话：0558-8615688 </a></div>
+                    </div>
+                </div>
+                <!--End Menu End-->
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div style="height: 0px;"></div>
+        </div>
+    </form>
+    <!--Begin Footer Begin -->
+    <div class="btmbg">
+        <div class="b_btm_bg b_btm_c">
+            <div class="b_btm">
+                <table border="0" style="width: 210px; height: 62px; float: left; margin-left: 75px; margin-top: 30px;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="72">
+                            <img src="/images/b1.png" width="62" height="62" /></td>
+                        <td>
+                            <h2>正品保障</h2>
+                            正品行货  放心购买</td>
+                    </tr>
+                </table>
+                <table border="0" style="width: 210px; height: 62px; float: left; margin-left: 75px; margin-top: 30px;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="72">
+                            <img src="/images/b2.png" width="62" height="62" /></td>
+                        <td>
+                            <h2>专业物流</h2>
+                            华源物流配送</td>
+                    </tr>
+                </table>
+                <table border="0" style="width: 210px; height: 62px; float: left; margin-left: 75px; margin-top: 30px;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="72">
+                            <img src="/images/b3.png" width="62" height="62" /></td>
+                        <td>
+                            <h2>天天低价</h2>
+                            天天低价 畅选无忧</td>
+                    </tr>
+                </table>
+                <table border="0" style="width: 210px; height: 62px; float: left; margin-left: 75px; margin-top: 30px;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="72">
+                            <img src="/images/b4.png" width="62" height="62" /></td>
+                        <td>
+                            <h2>准时送达</h2>
+                            收货时间由你做主</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="b_nav">
+
+            <dl>
+                <dt><a href="/ASPX/Help.aspx" target="_blank">新手上路</a></dt>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">售后流程</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">购物流程</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">订购方式</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">隐私声明</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">推荐分享说明</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="/ASPX/Help.aspx" target="_blank">配送与支付</a></dt>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">货到付款区域</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">配送支付查询</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">支付方式说明</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="/ASPX/Help.aspx" target="_blank">会员中心</a></dt>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">资金管理</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">我的收藏</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">我的订单</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="/ASPX/Help.aspx" target="_blank">服务保证</a></dt>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">退换货原则</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">售后服务保证</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">产品质量保证</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="/ASPX/Help.aspx" target="_blank">联系我们</a></dt>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">网站故障报告</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">购物咨询</a></dd>
+                <dd><a href="/ASPX/Help.aspx" target="_blank">投诉与建议</a></dd>
+            </dl>
+
+        </div>
+
+        <div class="friendlink" style="margin-bottom: 20px;">
+            <div style="width: 1200px; height: 30px">
+                <div class="friendlinkone">友情链接</div>
+                <div class="friendlinktwo"></div>
+            </div>
+            <div class="friendlinkthree">
+                <a href="http://www.sfda.gov.cn/WS01/CL0001/" title="国家食品药品监督管理总局" target="_blank">国家食品药品监督管理总局</a>
+                <a href="http://www.ada.gov.cn/" title="安徽省食品药品监督管理局" target="_blank">安徽省食品药品监督管理局</a>
+                <a href="http://app2.sfda.gov.cn/datasearchp/gzcxSearch.do?formRender=cx" title="药品真实性查询" target="_blank">药品真实性查询</a>
+
+            </div>
+        </div>
+        <%--<div class="btm">
+            互联网药品信息服务资格证书 证书编号：（皖）-经营性-2013-0002    备案号：皖B2-20090007-1. 复制必究 .Hyey.cn
+                <br />
+
+            <img src="/images/b_1.gif" width="98" height="33" /><img src="/images/b_2.gif" width="98" height="33" /><img src="/images/b_3.gif" width="98" height="33" /><img src="/images/b_4.gif" width="98" height="33" /><img src="/images/b_5.gif" width="98" height="33" /><img src="/images/b_6.gif" width="98" height="33" />
+        </div>--%>
+        <div class="btm">
+            版权所有：安徽华源大药房连锁有限公司    系统维护：安徽华源医药电子商务有限公司
+            <br />
+            地址：太和县沙河东路168号    邮编：236600     电话：0558-8615688
+            <br />
+            <a href="/Certificate/JYXK.png" target="_blank">药品经营许可证：皖CA5580123 </a><a href="/Certificate/LTXK.png" target="_blank" style="padding-left: 20px;">食品流通许可证：SP3412221410001130</a><br />
+            <a href="/Certificate/XXFW.png" target="_blank">互联网药品信息服务资格证书：(皖)-非经营性-2016-0006 </a><a href="/Certificate/YYZZ.png" target="_blank" style="padding-left: 20px;">营业执照：91341222087574401G</a><br />
+            <a href="/Certificate/BAPZ.png" target="_blank">第二类医疗器械经营备案凭证：皖阜食药监械经营备20160723号</a>
+        </div>
+    </div>
+    <!--End Footer End -->
+</body>
+</html>

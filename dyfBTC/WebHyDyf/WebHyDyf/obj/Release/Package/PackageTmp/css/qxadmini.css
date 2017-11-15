@@ -1,0 +1,47 @@
+﻿.houtai-table-01 {
+    width: 600px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.houtai-table-01-TD-A {
+    width: 150px;
+    padding-right: 10px;
+    text-align: right;
+    max-width: 200px;
+    border: 1px solid #aaa;
+}
+
+.houtai-table-01-TD-B {
+    /*width: 420px;*/
+    padding-left: 10px;
+    text-align: left;
+    max-width: 570px;
+    border: 1px solid #aaa;
+}
+
+.houtai-top {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-height: 42px;
+    border-bottom: 0px;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    height: 38px;
+    width: 598px;
+    height: 42px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #333;
+}
